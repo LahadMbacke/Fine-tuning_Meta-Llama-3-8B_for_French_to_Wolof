@@ -70,7 +70,7 @@ trainer = Trainer(
     eval_dataset=tokenized_dataset["test"],
     tokenizer=tokenizer,
     data_collator=DataCollatorForSeq2Seq(tokenizer=tokenizer, model=model),
-    compute_metrics=compute_metrics,
+    # compute_metrics=compute_metrics,
 )
 
 trainer.train()
