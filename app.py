@@ -80,7 +80,7 @@ tokenizer.save_pretrained("./Lahad_meta-llama/Meta-Llama-3-8B_fr_wo")
 
 
 
-##########################################################################################################""
+######################################################tTEST""
 # Fonction de traduction
 def translate(text, src_lang="fr", tgt_lang="wo"):
     input_text = f"<{src_lang}>{text}<{tgt_lang}>"
