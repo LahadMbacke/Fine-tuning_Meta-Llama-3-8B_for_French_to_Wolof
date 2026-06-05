@@ -6,13 +6,13 @@ Modèle NLLB-200 (version distillée 600M) fine-tuné pour la traduction França
 
 ---
 
-## 📥 Installation
+## Installation
 
 ```bash
 pip install transformers datasets
 ```
 
-## 🚀 Utilisation rapide
+## Utilisation rapide
 
 ### Chargement du modèle
 
@@ -52,7 +52,7 @@ print(translate("Bonjour comment ça va ?"))  # Nanga def ?
 print(translate("J’ai décidé de quitter mon boulot"))  # Dama jël dogal ni damay bàyyi sama liggéey
 ```
 
-## 🧠 Configuration technique
+## Configuration technique
 
 ### Architecture
 
@@ -76,7 +76,7 @@ Seq2SeqTrainingArguments(
 )
 ```
 
-## 📊 Données
+## Données
 
 * **Dataset:** galsenai/centralized_wolof_french_translation_data
 * **Split:** 80/20 (Train/Test)
@@ -89,7 +89,7 @@ Seq2SeqTrainingArguments(
 {"fr": "Texte français", "wo": "Traduction wolof"}
 ```
 
-## 📈 Performances
+## Performances
 
 | Métrique | Valeur |
 |----------|--------|
@@ -97,17 +97,17 @@ Seq2SeqTrainingArguments(
 | BLEU Score | 42.1 |
 | Temps d'entraînement | 5h (T4) |
 
-## ⚠️ Limitations
+## Limitations
 
 1. Performances réduites sur textes techniques
 2. Limité à 128 tokens par défaut
 
-## 📜 Licence
+## Licence
 
 * **Modèle:** CC-BY-NC-4.0
 * **Données:** Licence originale du dataset
 
-## 🙏 Crédits
+## Crédits
 
 * Meta AI pour NLLB-200
 * GalsenAI pour les données
